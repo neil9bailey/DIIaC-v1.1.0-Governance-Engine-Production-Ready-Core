@@ -1,5 +1,0 @@
-assemble_prompt(
-    role="cto",
-    task="Provide a 5 year tech roadmap",
-    schema_name="EA_SOLUTION",
-)

@@ -1,5 +1,0 @@
-assemble_prompt(
-    role="Enterprise Architect",
-    task="Design a target state architecture",
-    schema_name="EA_SOLUTION",
-)
