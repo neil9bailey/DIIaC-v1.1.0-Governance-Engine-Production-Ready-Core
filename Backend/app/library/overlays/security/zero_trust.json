@@ -1,0 +1,9 @@
+{
+  "section": "SECURITY OVERLAY",
+  "content": [
+    "Assume breach at all times",
+    "Enforce identity-first access",
+    "Apply continuous verification",
+    "Minimize implicit trust zones"
+  ]
+}

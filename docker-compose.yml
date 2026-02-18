@@ -1,0 +1,32 @@
+services:
+  backend:
+    container_name: diiac-backend
+    build:
+      context: ./backend-ui-bridge
+      dockerfile: Dockerfile
+      args:
+        GOVERNANCE_BUILD_HASH: ${GOVERNANCE_BUILD_HASH}
+    ports:
+      - "3001:3001"
+    environment:
+      - NODE_ENV=production
+      - LLM_INGESTION_ENABLED=true
+      - OPENAI_API_KEY=${OPENAI_API_KEY}
+      - OPENAI_MODEL=${OPENAI_MODEL}
+    volumes:
+      - ./artefacts:/workspace/artefacts
+      - ./contracts:/workspace/contracts
+      - ./ledger:/workspace/ledger
+      - ./templates:/workspace/templates:ro
+    working_dir: /workspace/backend-ui-bridge
+    command: ["node", "server.js"]
+    restart: unless-stopped
+
+  frontend:
+    container_name: diiac-frontend
+    build:
+      context: ./Frontend
+    ports:
+      - "5173:5173"
+    command: ["npm", "run", "dev", "--", "--host"]
+    restart: unless-stopped

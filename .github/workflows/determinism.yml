@@ -1,0 +1,35 @@
+name: Determinism Enforcement
+
+on:
+  push:
+    branches:
+      - main
+      - develop
+      - wip/**
+  pull_request:
+    branches:
+      - main
+      - develop
+
+jobs:
+  determinism-test:
+    name: Enforce Deterministic Execution
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r Backend/requirements.txt
+
+      - name: Run determinism tests
+        run: |
+          pytest tests/test_determinism_under_auth.py -q

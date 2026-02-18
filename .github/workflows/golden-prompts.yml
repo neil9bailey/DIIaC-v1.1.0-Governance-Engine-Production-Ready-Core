@@ -1,0 +1,20 @@
+name: Golden Prompt Regression
+
+on:
+  pull_request:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+
+jobs:
+  golden-test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Build API image
+        run: docker compose build api
+
+      - name: Run golden prompt tests
+        run: docker compose run --rm api pytest

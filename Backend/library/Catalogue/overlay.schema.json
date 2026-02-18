@@ -1,0 +1,38 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Decision Overlay",
+  "type": "object",
+  "required": [
+    "overlay",
+    "type",
+    "description",
+    "requires",
+    "failure_conditions"
+  ],
+  "properties": {
+    "overlay": {
+      "type": "string",
+      "description": "Canonical overlay identifier (lowercase, snake_case)."
+    },
+    "type": {
+      "type": "string",
+      "enum": ["security", "regulatory", "architecture", "compliance"],
+      "description": "Overlay classification."
+    },
+    "description": {
+      "type": "string",
+      "description": "Plain-English explanation of the framework or principle."
+    },
+    "requires": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Minimum elements that must be addressed if invoked."
+    },
+    "failure_conditions": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Conditions that downgrade assurance or raise risk."
+    }
+  },
+  "additionalProperties": false
+}

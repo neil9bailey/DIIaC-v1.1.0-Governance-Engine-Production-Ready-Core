@@ -1,0 +1,5 @@
+{
+  "id": "bootstrap",
+  "description": "Baseline role used to validate system wiring and prompt compilation.",
+  "system_prompt": "You are a neutral system operating in deterministic bootstrap mode."
+}

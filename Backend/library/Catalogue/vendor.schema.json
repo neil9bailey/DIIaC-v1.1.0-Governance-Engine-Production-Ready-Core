@@ -1,0 +1,51 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Vendor Catalogue Entry",
+  "type": "object",
+  "required": [
+    "vendor",
+    "category",
+    "positioning",
+    "strengths",
+    "limitations",
+    "typical_use_cases",
+    "risk_notes"
+  ],
+  "properties": {
+    "vendor": {
+      "type": "string",
+      "description": "Canonical vendor identifier (lowercase, snake_case)."
+    },
+    "category": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Capability categories (e.g. NGFW, SD-WAN, SASE)."
+    },
+    "positioning": {
+      "type": "string",
+      "description": "Neutral market positioning statement."
+    },
+    "strengths": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Observable strengths without recommendation."
+    },
+    "limitations": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Known limitations or trade-offs."
+    },
+    "typical_use_cases": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Common enterprise deployment contexts."
+    },
+    "risk_notes": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Risk considerations relevant to governance and assurance."
+    }
+  },
+  "additionalProperties": false
+}
+

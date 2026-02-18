@@ -1,0 +1,16 @@
+{
+  "policy_id": "CTO_STRATEGY_BASELINE",
+  "policy_version": "1.0.0",
+  "schema": "CTO_STRATEGY",
+  "required_fields": [
+    "context",
+    "objectives",
+    "assumptions",
+    "constraints",
+    "strategy",
+    "roadmap",
+    "risks",
+    "success_metrics"
+  ],
+  "min_field_length": 20
+}

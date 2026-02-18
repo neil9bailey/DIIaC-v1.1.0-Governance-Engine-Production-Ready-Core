@@ -1,0 +1,9 @@
+{
+  "name": "network-design",
+  "description": "Enterprise network and security architecture design",
+  "input": {
+    "sites": "integer",
+    "clouds": "array",
+    "constraints": "array"
+  }
+}

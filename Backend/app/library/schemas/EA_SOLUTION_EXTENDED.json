@@ -1,0 +1,7 @@
+{
+  "extends": "EA_SOLUTION",
+  "adds": {
+    "security_considerations": "",
+    "operational_readiness": ""
+  }
+}

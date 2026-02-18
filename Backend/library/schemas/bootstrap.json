@@ -1,0 +1,14 @@
+{
+  "id": "bootstrap",
+  "description": "Baseline schema used for initial system validation and development.",
+  "output_format": {
+    "type": "object",
+    "properties": {
+      "result": {
+        "type": "string",
+        "description": "Compiled output"
+      }
+    },
+    "required": ["result"]
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "type": "GOVERNED_EXECUTION",
+  "execution_id": "0f49d90e-e315-4f81-9f87-6a2c882124b7",
+  "provider": "test",
+  "pack_hash": "1fd2effa08ae33665f62e0841a1dab83f03a3361c63133ef233bf15d72752a02",
+  "artefacts": [
+    {
+      "name": "cto-strategy-governed-cto-strategy-draft.chatgpt.md",
+      "hash": "db1005db0bee53f54798e165a7a9440af69f90c79cbcb8ec9827f0e440949bf9"
+    },
+    {
+      "name": "cto-strategy-governed-cto-strategy-draft.copilot.docx",
+      "hash": "27bd058d95c90f965a33f63e90022ef1f343be29c2cecb0800f3df6351f7dd86"
+    },
+    {
+      "name": "cto-strategy-governed-cto-strategy-draft.copilot.md",
+      "hash": "f4229528d5418979a7328f73ae68c3a950e9fac13e4747034822bb4d27905b59"
+    },
+    {
+      "name": "cto-strategy-governed-cyber-risk-posture.board.md",
+      "hash": "d11eadfd001874aa6a1e8494c8922f9dab59b5b3b1b3e614f93cf809386ca21e"
+    },
+    {
+      "name": "cto-strategy-governed-operational-resilience-nis2.md",
+      "hash": "e860efb3c8de1a8f686f4c6b779b0b471219573f7bda89b329e8627a6ddc5870"
+    }
+  ],
+  "timestamp": "2026-02-16T07:56:21.158Z",
+  "previous_hash": "5993b68b2be51bda5842e94cf37c708b69ef36baf6ea47b9f0511ccb91c4f3f1",
+  "record_hash": "867f780af58398fba9e470d8e79b6563a43177391129b81d097fc402daec12f7"
+}

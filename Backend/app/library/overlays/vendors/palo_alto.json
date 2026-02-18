@@ -1,0 +1,7 @@
+{
+  "name": "Palo Alto Networks Overlay",
+  "content": [
+    "Apply Palo Alto Networks security principles where relevant.",
+    "Align recommendations with Zero Trust and NGFW capabilities."
+  ]
+}
